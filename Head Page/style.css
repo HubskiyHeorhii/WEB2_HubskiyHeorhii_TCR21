@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* GRID З КАРТКАМИ */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* КАРТКА */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.card a {
+    text-decoration: none;
+    color: #0077ff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* FOOTER */
+footer {
+    background: rgba(0, 0, 0, 0.6);
+    color: #ddd;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+}
+
+footer a {
+    color: #00c3ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

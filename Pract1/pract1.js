@@ -2,10 +2,6 @@
 
 alert("Будь ласка, заповніть анкету");
 
-// ----------------
-// Ім'я
-// ----------------
-
 let name;
 
 do {
@@ -17,11 +13,6 @@ do {
     }
 
 } while (name === null || name.trim() === "");
-
-
-// ----------------
-// Вік + перевірка повноліття
-// ----------------
 
 let age;
 let ageNumber;
@@ -48,11 +39,6 @@ do {
 
 } while (isNaN(ageNumber) || ageNumber < 18);
 
-
-// ----------------
-// Місто
-// ----------------
-
 let city;
 
 do {
@@ -65,11 +51,6 @@ do {
 
 } while (city === null || city.trim() === "");
 
-
-// ----------------
-// Улюблений колір
-// ----------------
-
 let color;
 
 do {
@@ -81,11 +62,6 @@ do {
     }
 
 } while (color === null || color.trim() === "");
-
-
-// ----------------
-// Чи працює користувач
-// ----------------
 
 let work;
 
@@ -110,21 +86,18 @@ if (!sendData) {
 
 } else {
 
-    // Вивід у консоль
     console.log("Ім'я:", name);
     console.log("Вік:", ageNumber);
     console.log("Місто:", city);
     console.log("Колір:", color);
     console.log("Працює:", work);
 
-    // Типи даних
     console.log(typeof name);
     console.log(typeof ageNumber);
     console.log(typeof city);
     console.log(typeof color);
     console.log(typeof work);
 
-    // Вивід у HTML
     document.getElementById("name").textContent = name;
     document.getElementById("age").textContent = ageNumber;
     document.getElementById("city").textContent = city;
