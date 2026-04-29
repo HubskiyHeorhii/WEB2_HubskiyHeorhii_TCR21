@@ -1,1 +1,38 @@
-///
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+<meta charset="UTF-8">
+<title>Конвертер температур</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Конвертер температур</h1>
+
+    <input type="number" id="tempInput" placeholder="Введіть температуру">
+
+    <select id="type">
+        <option value="CtoF">C → F</option>
+        <option value="FtoC">F → C</option>
+    </select>
+
+    <button onclick="convert()">Конвертувати</button>
+
+    <div class="result" id="result"></div>
+
+    <div class="back-btn">
+        <a href="../index.html">← На головну</a>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 HubskijHeorhii</p>
+    </div>
+</div>
+
+<script src="pract2.js"></script>
+
+</body>
+</html>
